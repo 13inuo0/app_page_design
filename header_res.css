@@ -13,7 +13,7 @@ li {
 }
 a {
   text-decoration: none;
-  color: #fff;
+  color: #0e0e0e;
 }
 .header {
   width: 100%;
@@ -22,41 +22,89 @@ a {
 }
 .header-container {
   width: 100%;
+  height: 80px;
   max-width: 1200px;
   margin: auto;
   display: flex;
   align-items: center;
-  background-color: aqua;
+  background-color: #ffffff;
   justify-content: space-between;
+  padding: 0 30px;
+  box-shadow: 1px  #333;
 }
 .logo {
   font-size: 1.8rem;
   /* rem은 html을 기반으로 함. */
   font-weight: bold;
+  width: 15%;
 }
 .nav-menu {
   display: flex;
+  max-width: 1200px;
+  min-width: 500px;
+  justify-content: center;
+  /* gap: 30px; */
+}
+.nav-menu li a{
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+border-radius: 5px;
+}
+.nav-menu li a:hover {
+  background-color: #0f78f1;
+  color: #fff;
 }
 .auth-icons {
   display: flex;
+  gap: 10%;
+  width: 230px;
+  /* background-color: blue; */
+  justify-content: flex-end;
 }
-.auth-icon{
-    display: flex;
+.auth-icons a {
+  border: 2px solid #0f78f1;
+  background-color: #fff;
+  color: #0f78f1;
+  border-radius: 5px;
+  padding: 7px 5px;
+  font-size: 14px;
+  width: 200px;
+  gap: 10px;
+  margin: auto;
+  justify-content: center;
 }
-.hamburger{
-    /* display: flex; */
-    /* 모바일 화면에서 display: flex; 값을 주면 보였을 때 적용 됨. */
-    display: none;
-    flex-direction: column;
-    gap: 5px;
-    cursor: pointer;
-    background: none;
-    border: 0;
+.auth-icons a:nth-child(1){
+  background-color: #0f78f1;
+  color: #fff;
+}
+.auth-icons a:nth-child(1):hover{
+  background-color: #fff;
+  color: #0f78f1;
+}
+.auth-icons a:nth-child(2):hover{
+  background-color: #0f78f1;
+  color: #fff;
+}
+.icon {
+  width: 15px;
+}
+.auth-icon {
+  display: flex;
+}
+.hamburger {
+  /* display: flex; */
+  /* 모바일 화면에서 display: flex; 값을 주면 보였을 때 적용 됨. */
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  background: none;
+  border: 0;
 }
 /* 햄버거메뉴 */
-.hamburger span{
-    width: 25px;
-    height: 3px;
-    background-color: #333;
-    border-radius: 2px;
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  border-radius: 2px;
 }
